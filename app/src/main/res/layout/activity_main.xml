@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnTakephoto"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:onClick="onMainClick"
+        android:textAllCaps="false"
+        android:text="@string/takephoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSqlite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:onClick="onMainClick"
+        android:textAllCaps="false"
+        android:text="@string/sqlite"
+        app:layout_constraintStart_toEndOf="@+id/btnTakephoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVolley"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:textAllCaps="false"
+        android:text="@string/volleyUsage"
+        app:layout_constraintStart_toEndOf="@+id/btnSqlite"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onMainClick"/>
+
+    <Button
+        android:id="@+id/btnSmsDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:text="@string/smsDemo"
+        android:onClick="onMainClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTakephoto" />
+
+    <Button
+        android:id="@+id/btnProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:text="@string/customizeProgress"
+        android:onClick="onMainClick"
+        app:layout_constraintStart_toEndOf="@+id/btnSmsDemo"
+        app:layout_constraintTop_toBottomOf="@+id/btnSqlite" />
+
+    <Button
+        android:id="@+id/btnCircleProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/customzieCircleProgress"
+        android:onClick="onMainClick"
+        app:layout_constraintStart_toEndOf="@+id/btnProgress"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolley" />
+
+    <Button
+        android:id="@+id/btnViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:text="@string/viewPager"
+        android:onClick="onMainClick"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSmsDemo" />
+
+    <Button
+        android:id="@+id/btnDifferentDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:text="@string/differentDialog"
+        android:onClick="onMainClick"
+        app:layout_constraintStart_toEndOf="@+id/btnViewPager"
+        app:layout_constraintTop_toBottomOf="@+id/btnProgress" />
+
+    <Button
+        android:id="@+id/btnRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:text="@string/recyclerView"
+        android:onClick="onMainClick"
+        app:layout_constraintStart_toEndOf="@+id/btnDifferentDialog"
+        app:layout_constraintTop_toBottomOf="@+id/btnCircleProgress" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onMainClick"
+        android:text="@string/simulatecalculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewPager" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
